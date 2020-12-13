@@ -4,8 +4,7 @@ import java.util.Comparator;
 import java.util.LinkedList;
 
 /**
- * This class takes care of storing all the DNA Strings in a memory file and
- * keeping track of where each sequence and sequenceID is stored
+ * This class takes care of storing all the Passwords in a memory file
  * 
  * @author Justin Mathias
  * @version 2020.12.02
@@ -13,7 +12,7 @@ import java.util.LinkedList;
  */
 public class MemoryManager {
     private static LinkedList<Pair> freeSpots = new LinkedList<Pair>();
-    private static RandomAccessFile memory = DNAdbase.getMemoryFile();
+    private static RandomAccessFile memory = PasswordManager.getMemoryFile();
 
     /**
      * This method inserts a given String of characters into the memory file
